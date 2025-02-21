@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+        background-image: url('images/photo_2025-02-10_23-38-47.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    color: orangered;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro {
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: orangered;
+    border: 3px solid orange;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s linear;
+    opacity: 0.5;
+}
+
+.btn:hover {
+    background-color: orangered;
+    color: black;
+    border: 3px solid black;
+    transition: 0.5s linear;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.video-section {
+    margin-top: 30px;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 315px;
+    border-radius: 30px;
+   opacity: 0.5;
+}
+.video iframe:hover {
+    opacity: 1;
+}
+
+
+/* Основна кнопка */
+.socials {
+    position: fixed;
+    bottom: 20px;
+    right: -70px; /* Спочатку захована справа */
+    transition: 0.5s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Кнопка "Соцмережі" */
+.social-btn {
+    background-color: orangered;
+    color: black;
+    border: 3px solid rgb(17, 17, 17);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.social-btn:hover {
+    background-color: black;
+    color: orangered;
+    border: 3px solid orange;
+    right: -7px;
+    box-shadow: 0 0 30px orange;
+    opacity: 1;
+}
+
+/* Блок із кнопками соцмереж */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+}
+
+.tg-btn, .tt-btn {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: orangered;
+    color:  black;
+    border: 3px solid rgb(17, 17, 17);
+    opacity: 0.5;
+}
+ .tt-btn:hover{
+    background-color: black;
+    color: orangered;
+    border: 3px solid orange;
+    right: -7px;
+    box-shadow: 0 0 30px orange;
+
+}
+.tg-btn:hover{
+    background-color: black;
+    color: orangered;
+    border: 3px solid orange;
+    right: -7px;
+    box-shadow: 0 0 30px orange;
+
+}
+/* При наведенні кнопки "Соцмережі" – з’являються соцмережі */
+.socials:hover {
+    right: 10px;
+}
+
+.socials:hover .social-links {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* При кліку соцмережі залишаються */
+.socials.active {
+    right: 10px;
+}
+
+.socials.active .social-links {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+/* Розділ з модами */
+.mods-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: orangered;
+    border-radius: 15px;
+}
+
+/* Кнопка для CurseForge */
+.mods-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: orangered;
+    color: black;
+    font-size: 18px;
+    border: 3px solid orange;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.mods-btn:hover {
+    background-color: black;
+    color: orangered;
+    border: 3px solid orangered;
+    opacity: 1;
+}
+
+/* Контейнер модів */
+.mods-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Окремий блок мода */
+.mod {
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    border: 3px solid orange;
+    transition: 0.3s;
+}
+
+.mod:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px orange;
+}
+
+/* Посилання на конкретний мод */
+.mod-link {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: orangered;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.mod-link:hover {
+    background-color: black;
+    color: orangered;
+    border: 3px solid orange;
+}
