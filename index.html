@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadof King & TitanSoul - Minecraft Канал</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Ласкаво просимо на Shadof King & TitanSoul!</h1>
+    <p>Дивись круті відео, гайди та багато іншого!</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>Про канал</h2>
+        <p>ми знімаю відео про Minecraft, моди, виживання та інші цікаві речі. Підписуйся, щоб не пропустити нові відео!</p>
+        <a href="https://youtube.com/@titansoul_992?si=bM9CehC8f9Tr36VN" class="btn" target="_blank">Перейти на YouTube</a>
+    </section>
+    <article class="socials">
+        <button class="social-btn">Соцмережі</button>
+        <div class="social-links">
+            <a href="https://t.me/+97Ze-gzxtwQ4YzNi" target="_blank" class="tg-btn">Telegram</a>
+            <a href="https://www.tiktok.com/@administrator1?_t=ZM-8trdlghSzob&_r=1" target="_blank" class="tt-btn">TikTok</a>
+        </div>
+    </article>
+    
+    <section class="video-section">
+        <div class="video">
+            <h3>Останнє відео</h3>
+            <iframe src="https://www.youtube.com/embed/ID_відео" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+</div>
+</body>
+<footer>
+    <section class="mods-section">
+        <h2>Моди для Minecraft</h2>
+        <p>Завантажуй найкращі моди для Minecraft з CurseForge! Вони додадуть нові можливості, мобів, предмети та покращать ігровий досвід.</p>
+    
+        <a href="https://www.curseforge.com/minecraft/mc-mods" target="_blank" class="btn mods-btn">Перейти на CurseForge</a>
+    
+        <div class="mods-list">
+            <div class="mod">
+                <h3>OptiFine</h3>
+                <p>Оптимізує гру, додає шейдери, покращує FPS.</p>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/optifine" target="_blank" class="mod-link">Детальніше</a>
+            </div>
+    
+            <div class="mod">
+                <h3>Just Enough Items (JEI)</h3>
+                <p>Додає зручний список рецептів для крафту.</p>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/jei" target="_blank" class="mod-link">Детальніше</a>
+            </div>
+    
+            <div class="mod">
+                <h3>Twilight Forest</h3>
+                <p>Новий вимір із босами, структурами та пригодами.</p>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest" target="_blank" class="mod-link">Детальніше</a>
+            </div>
+    
+            <div class="mod">
+                <h3>Create</h3>
+                <p>Додає потужні механізми та анімації для автоматизації.</p>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/create" target="_blank" class="mod-link">Детальніше</a>
+            </div>
+    
+            <div class="mod">
+                <h3>Refined Storage</h3>
+                <p>Сучасна система зберігання ресурсів у Minecraft.</p>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/refined-storage" target="_blank" class="mod-link">Детальніше</a>
+            </div>
+    
+            <div class="mod">
+                <h3>Biomes O' Plenty</h3>
+                <p>Додає безліч нових біомів та унікальні блоки.</p>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty" target="_blank" class="mod-link">Детальніше</a>
+            </div>
+    
+            <div class="mod">
+                <h3>Alex's Mobs</h3>
+                <p>Нові реалістичні та фантастичні моби у грі.</p>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/alexs-mobs" target="_blank" class="mod-link">Детальніше</a>
+            </div>
+    
+            <div class="mod">
+                <h3>Mekanism</h3>
+                <p>Потужна техномагія: генератори, машини та броня.</p>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/mekanism" target="_blank" class="mod-link">Детальніше</a>
+            </div>
+    
+            <div class="mod">
+                <h3>RLCraft</h3>
+                <p>Один із найскладніших модпаків для виживання!</p>
+                <a href="https://www.curseforge.com/minecraft/modpacks/rlcraft" target="_blank" class="mod-link">Детальніше</a>
+            </div>
+        </div>
+    </section>
+    
+</footer>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const socialBtn = document.querySelector(".social-btn");
+        const socialBlock = document.querySelector(".socials");
+
+        socialBtn.addEventListener("click", function (event) {
+            event.stopPropagation(); // Щоб не закривалося при кліку на кнопку
+            socialBlock.classList.toggle("active");
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!socialBlock.contains(event.target)) {
+                socialBlock.classList.remove("active");
+            }
+        });
+    });
+</script>
+
+
+</html>
